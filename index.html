@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/532528a6d7.js" crossorigin="anonymous"></script> <!--Skripta za ikone-->
+    <link rel="stylesheet" href="app.css">
+    <title>Pomarance</title>
+</head>
+
+<body class="dark-theme">
+    <section id="landing-page">
+        <nav>
+            <div class="row">
+                <i id="nav__logo" class=""></i>
+                <div class="nav__links">
+                    <a class="nav__link link__hover-effect bg-black" href="#projects">Recepti</a>
+                    <a class="nav__link link__hover-effect bg-black" href="https://www.tridge.com/intelligences/orange-juice">Prodaja</a>
+                    <a class="nav__link link__hover-effect bg-black" href="#about">O Pomarančah</a> 
+                    <i class="nav__link fas fa-adjust click" onclick="toggleDark()"></i>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div class="header__content">
+                <div class="header__description">
+                    <h1>Pomaranče</h1>
+                    <div class="header__slider">
+                        <h2>Sladke</h2>
+                        <h2>Sadje</h2>
+                        <h2>Vitamin C</h2>
+                    </div>
+                </div>
+                <div class="header__description--links">
+                    <a href="https://en.wikipedia.org/wiki/Orange_(fruit)" class="header__description--link click" target="_blank">
+                        <i class="fa-brands fa-wikipedia-w"></i>
+                    </a>
+                    <a href="https://github.com/SparkOW511/Pomarance" class="header__description--link click" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                     <a href="https://www.google.com/search?q=orange&oq=orange&aqs=chrome.0.35i39j46i199i465i512j69i59l3j69i60l3.5787j0j7&sourceid=chrome&ie=UTF-8" class="header__description--link click" target="_blank">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a> 
+                </div>
+            </div>
+            </div>
+        </header>
+
+        <!-- Oblike -->
+
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-5"></div>
+        <div class="shape shape-6"></div>
+        <div class="shape shape-7"></div>
+        <div class="shape shape-8"></div>
+        <div class="shape shape-9"></div>
+        <div class="shape shape-10"></div>
+        <div class="shape shape-11"></div>
+        <div class="shape shape-12"></div>
+
+        <!-- Vrtenje Planeta -->
+
+        <div class="earth__wrapper">
+            <div class="earth__figure">
+                <img src="./assets/orange2.png" class="earth"></img>
+            </div>
+        </div>
+        <a href="#projects" class="scroll click"></a>
+    </section>
+
+    <section id="projects">
+        <div class="container reveal">
+            <h1 class="section__title">Recepti</h1>
+            <div class="project__slider">
+                <figure class="project__img--wrapper">
+                    <div class="project__background">
+                        <div class="project__links">
+                            <a href="https://sparkow511.github.io/Starter-Portfolio/" target="_blank">
+                                <i class="fas fa-link project__link project__site"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <img id="placeholder" src="./assets/pomarancni-sok.jpg" alt="">
+                    <img class="project__img" style="z-index: 1" src="./assets/pomarancni-sok.jpg" alt="">
+                    <img class="project__img" src="./assets/torta.jpg" alt="">
+                    <img class="project__img" src="https://www.bodieko.si/wp-content/uploads/2016/04/pomarancna-marmelada.jpg" alt="">
+                </figure>
+                <button id="previous" class="click" onclick="previousItem(event)">
+                    <i class="fas fa-chevron-circle-left"></i>
+                </button>
+                <button id="next" class="click" onclick="nextItem(event)">
+                    <i class="fas fa-chevron-circle-right"></i>
+                </button>
+            </div>
+            <div class="project__indicators">
+                <div class="project__indicator indicator-1 filled"></div>
+                <div class="project__indicator indicator-2"></div>
+                <div class="project__indicator indicator-3"></div>
+            </div>
+            <div class="project__description--wrapper p1">
+                <div class="project project-1">
+                    <h1>Pomarančni sok</h1>
+                    <h2>Težavnost: Preprosto</h2>
+                    <p>
+                        Začnimo jutro s kozarcem naravnega pomarančnega soka, ki nas bo osvežil, prebudil in nam dal moč ter potrebne vitamine.
+                    </p>
+                </div>
+                <div class="project project-2">
+                    <h1>Jaffa Torta</h1>
+                    <h2>Težavnost: Težko</h2>
+                    <p>
+                        Jaffa torta je slastna poslastica za vse ljubitelje čokoladno-pomarančne kombinacije. Primerna je za vse priložnosti in letne čase, najbolj pa tekne pozimi, ko so pomaranče res sezonske in pristnega okusa.
+                    </p>
+                </div>
+                <div class="project project-3">
+                    <h1>Pomarančna marmelada</h1>
+                    <h2>Težavnost: Težko</h2>
+                    <p>
+                        Domača pomarančna marmelada, hladno in tanko namazano maslo ter hrustljavo svež kruh ..., vse to je najlepši začetek jutra.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title reveal">O Pomarančah</h1>
+                <div class="about__description reveal">
+                    <div class="about__nav">
+                        <div class="about__nav--links">
+                            <span class="about--red"></span>
+                            <span class="about--yellow"></span>
+                            <span class="about--green"></span>
+                        </div>
+                    </div>
+                    <div class="about__main">
+                        <div class="about__text">
+                            <p>
+                                Pomaranča je sadež, ki ga uvrščamo v rod javorovcev in družino rutičevk. Drevo poimenujemo enako kot sadež, prav tako pa pogosto poimenovano tudi »pomarančevec«. Poznamo dve vrsti pomaranče: sladko in grenko. Je hibrid med pomelom in mandarino.
+                                <br>
+                                <br>
+                                Kar 75 % genov pripada mandarini, preostalih 25 % pa pripisujemo pomelu. V zadnjih nekaj letih si je rastlina prislužila naziv »najpogosteje gojeno sadno drevje«. Od leta 2012 sladke pomaranče predstavljajo približno 70 % proizvodnje agrumov.
+                            </p>
+                        </div>
+                        <div class="about__profile">
+                            <figure class="about__img--wrapper">
+                                <div class="about__img">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <img class="footer__wave" src="./assets/waves2.svg" alt="">
+        <div class="row-2">
+            <div class="footer__logo--wrapper">
+                <a href="#">
+                    <i id="footer__logo" class="fas fa-long-arrow-up click"></i>
+                </a>
+            </div>
+            <div class="footer__links">
+                <a href="https://en.wikipedia.org/wiki/Orange_(fruit)" class="click" target="_blank">
+                    <i class="fa-brands fa-wikipedia-w"></i>
+                </a>
+                <a href="https://github.com/SparkOW511/Pomarance" class="click" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.google.com/search?q=orange&oq=orange&aqs=chrome.0.35i39j46i199i465i512j69i59l3j69i60l3.5787j0j7&sourceid=chrome&ie=UTF-8" class="click" target="_blank">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a> 
+            </div>
+            <div class="footer__copyright">
+                Copyright &copy;2023 Timotej Borštnar
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
