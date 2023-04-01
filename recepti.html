@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/532528a6d7.js" crossorigin="anonymous"></script> <!--Skripta za ikone-->
+    <link rel="stylesheet" href="side.css">
+    <title>Recepti</title>
+</head>
+
+<body class="dark-theme">
+    <section id="landing-page">
+    <nav>
+        <div class="row">
+            <i id="nav__logo" class=""></i>
+            <div class="nav__links">
+                <a class="nav__link link__hover-effect bg-black" href="./index.html">Domov</a>
+                <a class="nav__link link__hover-effect bg-black" href="./recepti.html">Recepti</a>
+                <a class="nav__link link__hover-effect bg-black" href="./sales.html">Prodaja</a>
+                <a class="nav__link link__hover-effect bg-black" href="./nutricija.html">Nutricija</a>
+                <a class="nav__link link__hover-effect bg-black" href="./about.html">O Pomarančah</a> 
+                <i class="nav__link fas fa-adjust click" onclick="toggleDark()"></i>
+            </div>
+        </div>
+    </nav>
+    </section>
+
+    <section id="projects">      
+        <div class="container">
+            <h1 class="section__title">Recepti</h1>
+            <div class="project__slider">
+                <figure class="project__img--wrapper">
+                    <div class="project__background">
+                        <div class="project__links">
+                            <a href="https://sparkow511.github.io/Starter-Portfolio/" target="_blank">
+                                <i class="fas fa-link project__link project__site"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <img id="placeholder" src="./assets/pomarancni-sok.jpg" alt="">
+                    <img class="project__img" style="z-index: 1" src="./assets/pomarancni-sok.jpg" alt="">
+                    <img class="project__img" src="./assets/torta.jpg" alt="">
+                    <img class="project__img" src="https://www.bodieko.si/wp-content/uploads/2016/04/pomarancna-marmelada.jpg" alt="">
+                </figure>
+                <button id="previous" class="click" onclick="previousItem(event)">
+                    <i class="fas fa-chevron-circle-left"></i>
+                </button>
+                <button id="next" class="click" onclick="nextItem(event)">
+                    <i class="fas fa-chevron-circle-right"></i>
+                </button>
+            </div>
+            <div class="project__indicators">
+                <div class="project__indicator indicator-1 filled"></div>
+                <div class="project__indicator indicator-2"></div>
+                <div class="project__indicator indicator-3"></div>
+            </div>
+            <div class="project__description--wrapper p1">
+                <div class="project project-1">
+                    <h1>Pomarančni sok</h1>
+                    <h2>Težavnost: Preprosto</h2>
+                    <p>
+                        Začnimo jutro s kozarcem naravnega pomarančnega soka, ki nas bo osvežil, prebudil in nam dal moč ter potrebne vitamine.
+                    </p>
+                </div>
+                <div class="project project-2">
+                    <h1>Jaffa Torta</h1>
+                    <h2>Težavnost: Težko</h2>
+                    <p>
+                        Jaffa torta je slastna poslastica za vse ljubitelje čokoladno-pomarančne kombinacije. Primerna je za vse priložnosti in letne čase, najbolj pa tekne pozimi, ko so pomaranče res sezonske in pristnega okusa.
+                    </p>
+                </div>
+                <div class="project project-3">
+                    <h1>Pomarančna marmelada</h1>
+                    <h2>Težavnost: Težko</h2>
+                    <p>
+                        Domača pomarančna marmelada, hladno in tanko namazano maslo ter hrustljavo svež kruh ..., vse to je najlepši začetek jutra.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img class="footer__wave" src="./assets/waves2.svg" alt="">
+        <div class="row-2">
+            <div class="footer__logo--wrapper">
+                <a href="#">
+                    <i id="footer__logo" class=""></i>
+                </a>
+            </div>
+            <div class="footer__links">
+                <a href="https://en.wikipedia.org/wiki/Orange_(fruit)" class="click" target="_blank">
+                    <i class="fa-brands fa-wikipedia-w"></i>
+                </a>
+                <a href="https://github.com/SparkOW511/Pomarance" class="click" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.google.com/search?q=orange&oq=orange&aqs=chrome.0.35i39j46i199i465i512j69i59l3j69i60l3.5787j0j7&sourceid=chrome&ie=UTF-8" class="click" target="_blank">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a> 
+            </div>
+            <div class="footer__copyright">
+                Copyright &copy;2023 Timotej Borštnar
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
